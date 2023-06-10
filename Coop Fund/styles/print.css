@@ -1,0 +1,12 @@
+@page{
+    size:A4;
+    
+}
+
+
+
+
+#print{
+    display: none;
+    visibility: none;
+}

@@ -1,0 +1,385 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+body {
+    background-color: #eaf4f4;
+
+}
+
+/* tabs */
+
+ol li {
+    color: #fff;
+    padding: 0.75em;
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 0.2em;
+    background-color: #3e4a81;
+    border-radius: 10px 0px 0px 10px;
+    cursor: pointer;
+}
+
+ol li:hover {
+    background-color: #fff;
+    color: #0c2cbb;
+    transition: all 0.2s ease-in-out;
+}
+
+.selected {
+    background-color: #fff;
+    color: #0c2cbb;
+}
+
+ul {
+    float: left;
+    list-style: none;
+    padding: 0px;
+    border: 1px solid black;
+    position: absolute;
+    background-color: #fff;
+    width: 25em;
+    /* margin-top: 0px; */
+    margin-left: 28.4em;
+    text-align: left;
+}
+
+
+
+li:hover {
+    color: #fff;
+    background: #0088cc;
+
+}
+
+/* tabs */
+
+ul {
+    float: left;
+    list-style: none;
+    padding: 0px;
+    border: 1px solid black;
+    position: absolute;
+    background-color: #fff;
+    width: 25em;
+    margin-top: 0px;
+    margin-left: 1.8em;
+}
+
+
+
+li:hover {
+    color: silver;
+    background: #0088cc;
+
+}
+
+.log-btn {
+    margin-top: 1em;
+    width: 7em;
+    height: 2em;
+    background-color: #fff;
+    border-color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    color: #0c2cbb;
+    font-weight: bold;
+}
+
+
+
+.scroll-div {
+
+    height: 190px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+
+
+.print {
+    width: 10em;
+    height: 2em;
+    background-color: #0386f8;
+    border-color: #92c8ec;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+    transition: all 0.2s ease-in-out;
+    /* font-size: 1.5em; */
+    margin-left: -20px;
+    margin-top: 0.5em;
+}
+
+.revery {
+    color: #fff;
+    position: absolute;
+    top: 91vh;
+    margin-left: 2.3em;
+}
+
+.revery h6 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 7px;
+    margin-bottom: -3px;
+}
+
+
+/* header */
+header {
+    height: 3em;
+    background-color: #fff;
+    padding: 1em;
+}
+
+.coop {
+    font-family: sans-serif;
+    color: #a5a4a4;
+    display: flex;
+    justify-content: space-between;
+}
+
+section {
+
+    float: left;
+    width: 2em;
+    height: 2em;
+    background-color: #a5a4a4;
+    border-radius: 100%;
+    margin-right: 1em;
+    margin-top: 0.5em;
+}
+
+
+/* header */
+
+
+/* side-nav */
+.side-nav {
+    width: 10%;
+    height: 43em;
+    background-color: #485696;
+
+}
+
+.side-nav label {
+
+    color: #fff;
+
+}
+
+#uid {
+    border-radius: 100%;
+    margin-top: 2em;
+}
+
+/* side-nav */
+.main {
+    display: flex;
+    /* gap: 2em; */
+
+}
+
+/* main-middle */
+.Tab1 {
+    visibility: visible;
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    margin-top: 2em;
+}
+
+.Tab1 .tab-main {
+    width: 63%;
+    height: 40em;
+    background-color: #fff;
+}
+
+.Tab1 .sview {
+    width: 30%;
+    height: 39em;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+}
+
+.Tab1 .sview .new {
+    margin-bottom: 2em;
+}
+
+hr {
+    width: 85%;
+}
+
+.Tab2 {
+    visibility: hidden;
+    height: 38em;
+    width: 87%;
+    margin: 1em;
+    background-color: #fff;
+    position: absolute;
+    top: 55%;
+    left: 54%;
+    transform: translate(-50%, -50%);
+}
+
+.Tab3 {
+    visibility: hidden;
+    visibility: hidden;
+    height: 38em;
+    width: 87%;
+    margin: 1em;
+    background-color: #fff;
+    position: absolute;
+    top: 55%;
+    left: 54%;
+    transform: translate(-50%, -50%);
+}
+
+.dtadd {
+    display: flex;
+    transform: translateX(15%);
+}
+
+.dtadd .lbl {
+    font-size: 23px;
+    color: rgb(45, 44, 44);
+
+
+}
+
+.dtadd .lbl div {
+    margin-bottom: 0.5em;
+}
+
+.dtadd .inpts input,
+select {
+    width: 30em;
+    height: 25px;
+    margin-left: 2em;
+    margin-bottom: 1em;
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+
+}
+
+.addbtn {
+    width: 15em;
+    height: 2.5em;
+    background-color: #0386f8;
+    border-color: #92c8ec;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+    transition: all 0.2s ease-in-out;
+    margin-bottom: 1em;
+}
+
+#addnewbtn {
+    width: 15em;
+    height: 2.5em;
+    background-color: #0386f8;
+    border-color: #92c8ec;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+    transition: all 0.2s ease-in-out;
+}
+
+/* main */
+
+/* timely report */
+.tform-date {
+    display: flex;
+    justify-content: center;
+    gap: 4em;
+    margin-top: 2.5em;
+}
+
+.tform-date input {
+    width: 25em;
+    height: 25px;
+    margin-left: 2em;
+    margin-bottom: 1em;
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    font-size: large;
+    text-align: center;
+}
+
+.tform-btn {
+    display: flex;
+    justify-content: center;
+
+}
+
+.tform-btn button {
+    width: 15em;
+    height: 2.5em;
+    background-color: #0386f8;
+    border-color: #92c8ec;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+    transition: all 0.2s ease-in-out;
+    margin: 2em;
+}
+
+.tform-container .scroll-div {
+    height: 300px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+/* full report */
+.fform-date {
+    display: flex;
+    justify-content: center;
+    gap: 4em;
+    margin-top: 2.5em;
+}
+
+.fform-date input {
+    width: 25em;
+    height: 25px;
+    margin-left: 2em;
+    margin-bottom: 1em;
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    font-size: large;
+    text-align: center;
+}
+
+.fform-btn {
+    display: flex;
+    justify-content: center;
+
+}
+
+.fform-btn button {
+    width: 15em;
+    height: 2.5em;
+    background-color: #0386f8;
+    border-color: #92c8ec;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+    transition: all 0.2s ease-in-out;
+    margin: 2em;
+}
+
+.fform-container .scroll-div {
+    height: 300px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+#result1{
+    margin-left: 6em;
+    margin-bottom: 9.6em;
+
+}

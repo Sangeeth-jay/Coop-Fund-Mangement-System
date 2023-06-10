@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Printable Web Page</title>
+    <style type="text/css">
+        * {
+            padding: 0%;
+            margin: 0%;
+        }
+
+        body {
+            background-color: #eaf4f4;
+
+        }
+        .Tab1{
+            display: flex;
+            justify-content: space-around;
+
+        }
+        .Tab1 .tab-main{
+            width: 55%;
+            height: 43em;
+            background-color: #fff;
+        }
+        .Tab1 .sview{
+            width: 30%;
+            height: 43em;
+            background-color: #fff;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="Tab1">
+        <!-- main -->
+        <div class="tab-main">
+            <div class="middle-main">
+
+
+                <?php
+                $sql = "SELECT * from society where AC_office_idAC_office = '" . $acid . "';";
+                $reqult = mysqli_query($conn, $sql);
+
+
+                ?>
+
+                <form action="insert_pays.php" method="get">
+                    <div class="dtadd">
+                        <label for="">සමිතියේ නම -</label>
+
+
+                        <input type="text" placeholder="Search Society here..." id="aa" required>
+                        <div id="response"></div>
+                        <input type="hidden" name="sid" id="sid" value="">
+
+                        <label for="">රිසිටි පත් අංකය - </label>
+                        <input type="text" id="innvoice" name="invoice" required><br>
+                        <label for="" id="">මුදල - </label>
+                        <input type="text" id="amount" name="amount" required><br>
+                        <label for="">ගෙවූ ආකාරය - </label>
+                        <select name="type" id="type" class="type">
+                            <option value="by Cheque">by Cheque</option>
+                            <option value="by Cash">by Cash</option>
+                        </select><br>
+                        <label for="">දිනය - </label>
+                        <input type="date" id="date" name="date" required><br><br>
+                        <center><input type="submit" value="Add Payment" class="addbtn"></center>
+                        <input type="hidden" name="society_id" id="ma_in_sid">
+
+                        <input type="hidden" name="acid" <?php echo 'value="' . $acid . '"' ?>>
+                        <input type="hidden" name="uname1" <?php echo 'value="' . $uname . '"' ?>>
+                        <input type="hidden" name="password1" <?php echo 'value="' . $password . '"' ?>>
+                    </div>
+                </form>
+                <br><br>
+                <hr>
+            </div>
+            
+            <div class="dtshow">
+                <br>
+                <center>
+                    <h2 class="nm">ගෙවීමි තොරතුරු </h2>
+                </center>
+
+                <table border="1" width="95%">
+                    <tr>
+                        <th width="200px">Voucher</th>
+                        <th width="200px">Amount</th>
+                        <th width="200px">Type</th>
+                        <th width="200px">Date</th>
+                    </tr>
+                </table>
+                <div class="scroll-bg">
+                    <div class="scroll-div">
+                        <div class="result2" id="result2"></div>
+                    </div>
+                </div>
+                <form action="society_report_print.php" method="post" target="_blank">
+                    <input type="hidden" name="society_id" id="in_sid">
+
+                    <center><input type="submit" value="Print" class="print"></center>
+                </form> 
+            </div>
+        </div>
+
+        <div class="sview">
+            <div class="auto" id="result1">
+
+
+            </div>
+            <br>
+            <hr><br>
+            <div class="new">
+                <form action="new_found_year.php" method="get">
+                    <input type="hidden" name="society_id" id="society_id">
+                    <input type="hidden" name="acid" <?php echo 'value="' . $acid . '"' ?> id="acid">
+                    <input type="hidden" name="uname1" <?php echo 'value="' . $uname . '"' ?>>
+                    <input type="hidden" name="password1" <?php echo 'value="' . $password . '"' ?>>
+
+
+                    <center><input type="submit" value="Add New" id="addnewbtn"></center>
+                </form>
+            </div>
+        </div>
+
+
+
+
+        <!-- main -->
+    </div>
+
+</html>
